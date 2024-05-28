@@ -1,221 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        h1, h2, h3 {
-            margin-top: 0;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .section ul li {
-            margin-bottom: 10px;
-        }
-        .section ul li strong {
-            display: inline-block;
-            width: 150px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <section class="section" id="work">
-            <h2>Work Experience</h2>
-            <ul id="work-experience"></ul>
-        </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jeremy Johnson - Resume</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Jeremy Johnson</h1>
+			<nav>
+				<ul>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#work-experience">Work Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#certifications">Certifications</a></li>
+				</ul>
+			</nav>
+		</header>
 
-        <section class="section" id="education">
-            <h2>Education</h2>
-            <ul id="education-list"></ul>
-        </section>
+		<section id="contact">
+			<h2>Contact Information</h2>
+			<p>
+				Email:
+				<a href="mailto:jwjohnson093@gmail.com">jwjohnson093@gmail.com</a>
+			</p>
+			<p>Phone: (252) 286-8879</p>
+			<p>Location: Greenville, NC</p>
+			<p>
+				LinkedIn:
+				<a href="https://www.linkedin.com/in/jwjohnson93/">Jeremy Johnson</a>
+			</p>
+		</section>
 
-        <section class="section" id="skills">
-            <h2>Skills</h2>
-            <ul id="skills-list"></ul>
-        </section>
+		<section id="education">
+			<h2>Education</h2>
+			<div class="education-item">
+				<h3>BS in Business Management</h3>
+				<p>
+					East Carolina University, Greenville, NC (August 2012 - December 2014)
+				</p>
+			</div>
+			<div class="education-item">
+				<h3>BS in Information Technology</h3>
+				<p>
+					Western Governors University, Greenville, NC (August 2018 - July 2021)
+				</p>
+			</div>
+		</section>
 
-        <section class="section" id="projects">
-            <h2>Projects</h2>
-            <ul id="projects-list"></ul>
-        </section>
-    </div>
+		<section id="work-experience">
+			<h2>Work Experience</h2>
+			<div class="work-experience-item">
+				<h3>System Administrator I</h3>
+				<p>Company: Victra, Raleigh, NC (May 2021 - Present)</p>
+				<p>Details:</p>
+				<ul>
+					<li>
+						Architected group policies in Intune to support new cloud
+						environment.
+					</li>
+					<li>
+						Migrated all relying parties from ADFS to enterprise applications in
+						Azure AD and implemented SCIM and automated provisioning.
+					</li>
+					<li>
+						Utilize monitoring tools such as Azure Monitor, Qualys, and NinjaOne
+						RMM to monitor and maintain endpoints in Azure.
+					</li>
+					<li>
+						Implemented code repository for infrastructure teams to share
+						commonly used scripts and maintain version control.
+					</li>
+					<li>
+						Partner with information security team to proactively identify and
+						remediate security vulnerabilities on endpoints.
+					</li>
+					<li>Manage and maintain full Microsoft 365 environment.</li>
+				</ul>
+			</div>
+			<div class="work-experience-item">
+				<h3>Solutions Manager</h3>
+				<p>Company: Verizon, Wilson, NC (September 2015 - May 2021)</p>
+				<p>Details:</p>
+				<ul>
+					<li>
+						Led and coached team of sales representatives to consistently
+						achieve and exceed monthly sales targets.
+					</li>
+					<li>
+						Assessed individual performance and created development plans for
+						representatives.
+					</li>
+					<li>
+						Assisted customers and business partners with technical support for
+						a variety of devices and applications.
+					</li>
+					<li>
+						Collaborated with team members from other locations to drive results
+						and increase profitability throughout the district.
+					</li>
+				</ul>
+			</div>
+		</section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const data = {
-              "selectedTemplate": 1,
-              "headings": {
-                "work": "Work Experience",
-                "education": "Education",
-                "skills": "",
-                "projects": "Projects"
-              },
-              "basics": {
-                "name": "Jeremy Johnson",
-                "email": "jwjohnson093@gmail.com",
-                "location": {
-                  "address": "Greenville, NC"
-                },
-                "phone": "(252) 286-8879",
-                "website": "https://www.linkedin.com/in/jwjohnson93/"
-              },
-              "education": [
-                {
-                  "institution": "East Carolina University",
-                  "location": "Greenville, NC",
-                  "area": "Business Management",
-                  "studyType": "BS",
-                  "startDate": "August 2012",
-                  "endDate": "December 2014"
-                },
-                {
-                  "institution": "Western Governors University",
-                  "studyType": "BS",
-                  "area": "Information Technology",
-                  "startDate": "August 2018",
-                  "endDate": "July 2021"
-                }
-              ],
-              "work": [
-                {
-                  "company": "Victra",
-                  "location": "Raleigh, NC",
-                  "position": "System Administrator I",
-                  "website": "",
-                  "highlights": [
-                    "Architected group policies in Intune to support new cloud environment.",
-                    "Migrated all relying parties from ADFS to enterprise applications in Azure AD and implemented SCIM and automated provisioning.",
-                    "Utilize monitoring tools such as Azure Monitor, Qualys, and NinjaOne RMM to monitor and maintain endpoints in Azure.",
-                    "Implemented code repository for infrastructure teams to share commonly used scripts and maintain version control.",
-                    "Partner with information security team to proactively identify and remediate security vulnerabilities on endpoints.",
-                    "Manage and maintain full Microsoft 365 environment."
-                  ],
-                  "startDate": "May 2021",
-                  "endDate": "Present"
-                },
-                {
-                  "highlights": [
-                    "Led and coached team of sales representatives to consistently achieve and exceed monthly sales targets.",
-                    "Assessed individual performance and created development plans for representatives.",
-                    "Assisted customers and business partners with technical support for a variety of devices and applications.",
-                    "Collaborated with team members from other locations to drive results and increase profitability throughout the district."
-                  ],
-                  "position": "Solutions Manager",
-                  "startDate": "September 2015",
-                  "company": "Verizon",
-                  "location": "Wilson, NC",
-                  "endDate": "May 2021"
-                }
-              ],
-              "skills": [
-                {
-                  "name": "",
-                  "level": "",
-                  "keywords": [
-                    ""
-                  ]
-                }
-              ],
-              "projects": [
-                {
-                  "description": "As part of our organization moving to a cloud only environment, I redesigned prior group policies from our on-premise environment to modern Intune configuration profiles. I also set up provisioning packages and scripts to assist with moving 5,000+ devices from Active Directory into Entra ID.",
-                  "url": "",
-                  "keywords": [
-                    ""
-                  ],
-                  "name": "Cloud Migration"
-                }
-              ],
-              "awards": [
-                {
-                  "title": "",
-                  "date": "",
-                  "awarder": "",
-                  "summary": ""
-                }
-              ],
-              "sections": [
-                "templates",
-                "profile",
-                "education",
-                "work",
-                "skills",
-                "projects",
-                "awards"
-              ]
-            };
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="project-item">
+				<h3>Cloud Migration</h3>
+				<p>
+					As part of our organization moving to a cloud-only environment, I
+					redesigned prior group policies from our on-premise environment to
+					modern Intune configuration profiles. I also set up provisioning
+					packages and scripts to assist with moving 5,000+ devices from Active
+					Directory into Entra ID.
+				</p>
+			</div>
+		</section>
 
-            function renderWorkExperience() {
-                const workExperienceList = document.getElementById("work-experience");
-                data.work.forEach(workItem => {
-                    const li = document.createElement("li");
-                    li.innerHTML = `
-                        <strong>${workItem.position}, ${workItem.company}</strong><br>
-                        ${workItem.startDate} - ${workItem.endDate}<br>
-                        ${workItem.location}<br>
-                        <ul>
-                            ${workItem.highlights.map(highlight => `<li>${highlight}</li>`).join("")}
-                        </ul>
-                    `;
-                    workExperienceList.appendChild(li);
-                });
-            }
-
-            function renderEducation() {
-                const educationList = document.getElementById("education-list");
-                data.education.forEach(educationItem => {
-                    const li = document.createElement("li");
-                    li.innerHTML = `
-                        <strong>${educationItem.studyType} in ${educationItem.area}</strong><br>
-                        ${educationItem.institution}, ${educationItem.location}<br>
-                        ${educationItem.startDate} - ${educationItem.endDate}
-                    `;
-                    educationList.appendChild(li);
-                });
-            }
-
-            function renderSkills() {
-                // Not implemented as skills data is empty
-            }
-
-            function renderProjects() {
-                const projectsList = document.getElementById("projects-list");
-                data.projects.forEach(project => {
-                    const li = document.createElement("li");
-                    li.innerHTML = `
-                        <strong>${project.name}</strong><br>
-                        ${project.description}
-                    `;
-                    projectsList.appendChild(li);
-                });
-            }
-
-            renderWorkExperience();
-            renderEducation();
-            render
+		<section id="certifications">
+			<h2>Certifications</h2>
+			<ul>
+				<li>CompTIA Security+ (Issued: July 2021, Expires: July 2024)</li>
+				<li>CompTIA Network+ (Issued: January 2021, Expires: July 2024)</li>
+				<li>CompTIA A+ (Issued: July 2021, Expires: July 2024)</li>
+				<li>CompTIA Project+ (Issued: January 2020)</li>
+				<li>
+					AWS Certified Cloud Practitioner (Issued: May 2021, Expires: May 2024)
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+{
+	"selectedTemplate": 1,
+	"headings": {
+		"work": "Work Experience",
+		"skills": "",
+		"projects": "Projects",
+		"awards": "",
+		"education": "Education"
+	},
+	"basics": {
+		"name": "Jeremy Johnson",
+		"email": "jwjohnson093@gmail.com",
+		"phone": "(252) 286-8879",
+		"website": "linkedin.com/in/jwjohnson93",
+		"location": {
+			"address": "Greenville, NC"
+		}
+	},
+	"education": [
+		{
+			"institution": "Western Governors University",
+			"area": "Information Technology",
+			"studyType": "BS",
+			"startDate": "Aug 2018",
+			"endDate": "Jul 2021"
+		},
+		{
+			"institution": "East Carolina University",
+			"location": "Greenville, NC",
+			"studyType": "BS",
+			"area": "Business Management",
+			"startDate": "Aug 2012",
+			"endDate": "Dec 2014"
+		}
+	],
+	"work": [
+		{
+			"company": "Victra",
+			"location": "Greenville, NC",
+			"position": "Corporate Support Analyst II",
+			"website": "",
+			"endDate": "Present",
+			"highlights": [
+				null,
+				"Created internal knowledge base detailing resolutions to common issues and standard operating procedures for a variety of tasks.",
+				"Develop and maintain on-premises group policies and Intune policies to manage devices across the organization.",
+				"Led deployment of RMM tool to manage devices and streamline multiple processes.",
+				"Configured single sign-on for a variety of internal and external applications utilizing Azure AD and ADFS.",
+				"Proactively identified performance issues on servers, virtual machines, and desktop devices and remediated accordingly.",
+				"Utilized Jira ticketing system to manage multiple projects and delegate tasks accordingly.",
+				"Utilize PowerShell scripting to perform scheduled or bulk tasks.",
+				"Administer company wide telecom systems across retail and call center locations, utilizing Teams Voice, 8x8, and Five9 systems."
+			],
+			"startDate": "Dec 2021"
+		},
+		{
+			"highlights": [
+				"Led and coached teams of sale representatives to meet and exceed targets across a variety of sales metrics.",
+				"Assessed individual performance and created development plans for representatives.",
+				"Assisted customers with technical support for iOS and Android devices.",
+				"Collaborate with team members across multiple stores and districts to drive results and increase profitability."
+			],
+			"company": "Verizon",
+			"position": "Solutions Manager",
+			"location": "Wilson, NC",
+			"startDate": "Sep 2015",
+			"endDate": "May 2021"
+		}
+	],
+	"skills": [
+		{
+			"name": "",
+			"level": "",
+			"keywords": [""]
+		}
+	],
+	"projects": [
+		{
+			"name": "NinjaOne RMM Deployment",
+			"description": "Led overall project to deploy NinjaOne RMM to all endpoints. Created all script packages to deploy software to devices and perform routine maintenance. Established proactive monitoring alerts, alongside documentation for remediating alerts.",
+			"url": "",
+			"keywords": [""]
+		},
+		{
+			"keywords": [""]
+		}
+	],
+	"awards": [
+		{
+			"title": "",
+			"date": "",
+			"awarder": "",
+			"summary": ""
+		}
+	],
+	"sections": [
+		"templates",
+		"profile",
+		"education",
+		"work",
+		"skills",
+		"projects",
+		"awards"
+	]
+}
